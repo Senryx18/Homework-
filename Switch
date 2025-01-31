@@ -16,7 +16,7 @@
             if (Number >= 32)
             {
             Console.WriteLine("Неверная дата рождения!");
-            return;
+            
             }
             if (Number <= 20)
             {         
@@ -32,7 +32,7 @@
             if (Number >= 30)
             {
             Console.WriteLine("Неверная дата рождения!");
-            return;
+            
             }                   
             if (Number <= 18)
             {                          
@@ -48,7 +48,7 @@
             if (Number >= 32)
             {
             Console.WriteLine("Неверная дата рождения!");
-            return;
+            
             }
             if (Number <= 20)
             {                           
@@ -64,7 +64,7 @@
             if (Number >= 31)
             {
             Console.WriteLine("Неверная дата рождения!");
-            return;
+            
             }                    
             if (Number <= 20)
             {                           
@@ -80,7 +80,7 @@
             if (Number >= 32)
             {
             Console.WriteLine("Неверная дата рождения!");
-            return;
+            
             }
             if (Number <= 20)
             {                      
@@ -96,7 +96,7 @@
             if (Number >= 31)
             {
             Console.WriteLine("Неверная дата рождения!");
-            return;
+            
             }
             if (Number <= 21)
             {                          
@@ -112,7 +112,7 @@
             if (Number >= 32)
             {
             Console.WriteLine("Неверная дата рождения!");
-            return;
+            
             }
             if (Number <= 22)
             {
@@ -127,7 +127,7 @@
             if (Number >= 32)
             {
             Console.WriteLine("Неверная дата рождения!");
-            return;
+            
             }
             if (Number <= 22)
             {
@@ -142,7 +142,7 @@
             if (Number >= 31)
             {
             Console.WriteLine("Неверная дата рождения!");
-            return;
+            
             }
             if (Number <= 23)
             {
@@ -157,7 +157,7 @@
             if (Number >= 32)
             {
             Console.WriteLine("Неверная дата рождения!");
-            return;
+            
             }
             if (Number <= 23)
             {
@@ -172,7 +172,7 @@
             if (Number >= 31)
             {
             Console.WriteLine("Неверная дата рождения!");
-            return;
+            
             }
             if (Number <= 22)
             {
@@ -188,7 +188,7 @@
             if (Number >= 32)
             {
             Console.WriteLine("Неверная дата рождения!");
-            return;
+            
             }
             if (Number <= 20)
             {
@@ -209,3 +209,7 @@
 
 
 }
+   
+
+
+
