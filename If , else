@@ -1,1 +1,82 @@
+ {
+     Console.WriteLine("Введите свое имя : ");
+     string Name = Console.ReadLine();
+     Console.WriteLine("Введите свою фамилию : ");
+     string Surname = Console.ReadLine();
+     Console.WriteLine("Введите день рождения в формате числа : ");
+     int Number = int.Parse(Console.ReadLine());
+     Console.WriteLine("Введите месяц рождения в формате числа : ");
+     int Month = int.Parse(Console.ReadLine());
 
+
+
+
+     if ((Month == 1 && Number <= 20 && Number > 0) && (Month == 12 && Number > 21 && Number < 32))
+     {
+         Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname},Ваш знак зодиака : Козерог");
+     }
+
+     else if ((Month == 1 && Number > 20 && Number < 32) && (Month == 2 && Number <= 20 && Number > 0))
+     {
+         Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname},Ваш знак зодиака : Водолей");
+     }
+
+     else if ((Month == 2 && Number > 20 && Number < 30) && (Month == 3 && Number <= 20 && Number > 0))
+     {
+         Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname},Ваш знак зодиака : Рыбы");
+     }
+
+     else if ((Month == 3 && Number > 20 && Number < 32) && (Month == 4 && Number <= 20 && Number > 0))
+     {
+         Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname},Ваш знак зодиака : Овен");
+     }
+
+     else if ((Month == 4 && Number > 20 && Number < 31) && (Month == 5 && Number <= 20 && Number > 0))
+     {
+         Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname},Ваш знак зодиака : Телец");
+     }
+
+     else if ((Month == 5 && Number > 20 && Number < 32) && (Month == 6 && Number <= 21 && Number > 0))
+     {
+         Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname},Ваш знак зодиака : Близнецы");
+     }
+
+     else if ((Month == 6 && Number > 21 && Number < 31) && (Month == 7 && Number <= 22 && Number > 0))
+     {
+         Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname},Ваш знак зодиака : Рак");
+     }
+
+     else if ((Month == 7 && Number > 22 && Number < 32) && (Month == 8 && Number <= 23 && Number > 0))
+     {
+         Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname},Ваш знак зодиака : Лев");
+     }
+
+     else if ((Month == 8 && Number > 23 && Number < 32) && (Month == 9 && Number <= 23 && Number > 0))
+     {
+         Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname},Ваш знак зодиака : Дева");
+     }
+
+     else if ((Month == 9 && Number > 23 && Number < 31) && (Month == 10 && Number <= 23 && Number > 0))
+     {
+         Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname},Ваш знак зодиака : Весы");
+     }
+
+     else if ((Month == 10 && Number > 23 && Number < 32) && (Month == 11 && Number <= 22 && Number > 0))
+     {
+         Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname},Ваш знак зодиака : Скорпион");
+     }
+
+     else if ((Month == 11 && Number > 22 && Number < 31) && (Month == 12 && Number <= 21 && Number > 0))
+     {
+         Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname} , Ваш знак зодиака : Стрелец");
+     }
+
+     else
+     {
+         Console.WriteLine("Неверная дата рождения");
+
+     }
+
+
+
+ }
