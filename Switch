@@ -1,1 +1,211 @@
+{
+    Console.WriteLine("Введите свое имя : ");
+    string Name = Console.ReadLine();
+    Console.WriteLine("Введите свою фамилию : ");
+    string Surname = Console.ReadLine();
+    Console.WriteLine("Введите день рождения в формате числа : ");
+    int Number = int.Parse(Console.ReadLine());
+    Console.WriteLine("Введите месяц рождения в формате числа : ");
+    int Month = int.Parse(Console.ReadLine());
 
+
+
+    switch (Month)
+    {
+        case 1:
+            if (Number >= 32)
+            {
+            Console.WriteLine("Неверная дата рождения!");
+            return;
+            }
+            if (Number <= 20)
+            {         
+            Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname}, Ваш знак зодиака: Козерог ");
+            }
+            else
+            {                    
+            Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname}, Ваш знак зодиака: Водолей ");
+            }
+            break;
+
+        case 2:
+            if (Number >= 30)
+            {
+            Console.WriteLine("Неверная дата рождения!");
+            return;
+            }                   
+            if (Number <= 18)
+            {                          
+            Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname}, Ваш знак зодиака: Водолей ");
+            }
+            else
+            {                           
+            Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname}, Ваш знак зодиака: Рыбы ");
+            }                   
+            break;
+            
+        case 3:
+            if (Number >= 32)
+            {
+            Console.WriteLine("Неверная дата рождения!");
+            return;
+            }
+            if (Number <= 20)
+            {                           
+            Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname}, Ваш знак зодиака: Рыбы ");
+            }
+            else
+            {                          
+            Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname}, Ваш знак зодиака: Овен ");
+            }
+            break;
+
+        case 4:
+            if (Number >= 31)
+            {
+            Console.WriteLine("Неверная дата рождения!");
+            return;
+            }                    
+            if (Number <= 20)
+            {                           
+            Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname}, Ваш знак зодиака: Овен ");
+            }
+            else
+            {
+            Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname}, Ваш знак зодиака: Телец ");
+            }                    
+            break;
+
+        case 5:
+            if (Number >= 32)
+            {
+            Console.WriteLine("Неверная дата рождения!");
+            return;
+            }
+            if (Number <= 20)
+            {                      
+            Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname}, Ваш знак зодиака: Телец ");
+            }
+            else
+            {                                             
+            Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname}, Ваш знак зодиака: Близнецы ");
+            }
+            break;
+
+        case 6:
+            if (Number >= 31)
+            {
+            Console.WriteLine("Неверная дата рождения!");
+            return;
+            }
+            if (Number <= 21)
+            {                          
+            Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname}, Ваш знак зодиака: Близнецы ");
+            }
+            else
+            {
+            Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname}, Ваш знак зодиака: Рак ");
+            }                   
+            break;
+
+        case 7:
+            if (Number >= 32)
+            {
+            Console.WriteLine("Неверная дата рождения!");
+            return;
+            }
+            if (Number <= 22)
+            {
+            Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname}, Ваш знак зодиака: Рак ");
+            }
+            else
+            {
+            Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname}, Ваш знак зодиака: Лев ");
+            }
+            break;
+        case 8:
+            if (Number >= 32)
+            {
+            Console.WriteLine("Неверная дата рождения!");
+            return;
+            }
+            if (Number <= 22)
+            {
+            Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname}, Ваш знак зодиака: Лев ");
+            }
+            else
+            {
+            Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname}, Ваш знак зодиака: Дева ");
+            }
+            break;
+        case 9:
+            if (Number >= 31)
+            {
+            Console.WriteLine("Неверная дата рождения!");
+            return;
+            }
+            if (Number <= 23)
+            {
+            Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname}, Ваш знак зодиака: Дева ");
+            }
+            else
+            {
+            Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname}, Ваш знак зодиака: Весы ");
+            }                   
+            break;
+        case 10:
+            if (Number >= 32)
+            {
+            Console.WriteLine("Неверная дата рождения!");
+            return;
+            }
+            if (Number <= 23)
+            {
+            Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname}, Ваш знак зодиака: Весы ");
+            }
+            else
+            {
+            Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname}, Ваш знак зодиака: Скорпион ");
+            }
+        break;
+        case 11:
+            if (Number >= 31)
+            {
+            Console.WriteLine("Неверная дата рождения!");
+            return;
+            }
+            if (Number <= 22)
+            {
+            Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname}, Ваш знак зодиака: Скорпион ");
+            }
+            else
+            {
+            Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname}, Ваш знак зодиака: Стрелец ");
+            }
+            
+        break;
+        case 12:
+            if (Number >= 32)
+            {
+            Console.WriteLine("Неверная дата рождения!");
+            return;
+            }
+            if (Number <= 20)
+            {
+            Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname}, Ваш знак зодиака: Стрелец ");
+            }
+            else
+            {
+            Console.WriteLine($"Ваше Имя: {Name}, Ваша Фамилия: {Surname}, Ваш знак зодиака: Водолей ");
+            }
+            break;
+        
+        default:
+            Console.WriteLine("Неверная дата рождения!");
+            break;
+    }
+
+   
+
+
+}
