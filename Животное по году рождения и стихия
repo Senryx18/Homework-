@@ -1,0 +1,138 @@
+ int Year, Last_Number_Year;   
+ Console.WriteLine("Введите свой год рождения");
+ Year = int.Parse(Console.ReadLine());
+
+
+  // Определение животного
+
+
+  if (Year >= 2026)
+  {
+   Console.WriteLine("Неверный год рождения");
+  }
+    if (Year <= 2025)
+   {
+      Console.WriteLine("Ваше тотемное животное : ");
+      if (Year % 12 == 0)
+      {
+          Console.WriteLine("Обезьяна");
+      }
+      else if (Year % 12 == 1)
+      {
+          Console.WriteLine("Петух");
+      }
+      else if (Year % 12 == 2)
+      {
+          Console.WriteLine("Собака");
+      }
+      else if (Year % 12 == 3)
+      {
+          Console.WriteLine("Кабан");
+      }
+      else if (Year % 12 == 4)
+      {
+          Console.WriteLine("Крыса");
+      }
+      else if (Year % 12 == 5)
+      {
+          Console.WriteLine("Бык");
+      }
+      else if (Year % 12 == 6)
+      {
+          Console.WriteLine("Тигр");
+      }
+      else if (Year % 12 == 7)
+      {
+          Console.WriteLine("Кролик");
+      }
+      else if (Year % 12 == 8)
+      {
+          Console.WriteLine("Дракон");
+      }
+      else if (Year % 12 == 9)
+      {
+          Console.WriteLine("Змея");
+      }
+      else if (Year % 12 == 10)
+      {
+          Console.WriteLine("Лошадь");
+      }
+      else if (Year % 12 == 11)
+      {
+          Console.WriteLine("Коза");
+      }
+
+    }
+
+
+
+
+
+  // Определение стихии
+
+
+
+
+  Last_Number_Year = 0;
+
+
+  if (Year >= 1 || Year >= 9)
+  {
+
+      Last_Number_Year = Year;
+  }
+
+  if (Year >= 10 || Year >= 99)
+  {
+
+      Last_Number_Year = Year % 10;
+  }
+
+  if (Year >= 100 || Year >= 999)
+  {
+
+      Last_Number_Year = Year % 100;
+  }
+
+  if (Year >= 1000 || Year >= 2025)
+  {
+
+      Last_Number_Year = Year % 1000;
+  }
+
+
+
+  if (Year >= 2026)
+  {
+      Console.WriteLine("");
+  }
+  if (Year <= 2025)
+  {
+      Console.WriteLine("Ваша стихия : ");
+
+      if (Last_Number_Year == 0 || Last_Number_Year == 1)
+      {
+          Console.WriteLine("Металл");
+      }
+      else if (Last_Number_Year == 2 || Last_Number_Year == 3)
+      {
+          Console.WriteLine("Вода");
+      }
+      else if (Last_Number_Year == 4 || Last_Number_Year == 5)
+      {
+          Console.WriteLine("Дерево");
+      }
+      else if (Last_Number_Year == 6 || Last_Number_Year == 7)
+      {
+          Console.WriteLine("Огонь");
+      }
+      else if (Last_Number_Year == 8 || Last_Number_Year == 9)
+      {
+          Console.WriteLine("Земля");
+      }
+  }
+
+
+
+
+
