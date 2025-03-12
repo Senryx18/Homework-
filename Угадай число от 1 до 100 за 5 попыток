@@ -1,0 +1,31 @@
+ Console.WriteLine("Угадай число за 5 попыток");
+ Random rnd = new Random();
+ int value = rnd.Next(1, 101);
+ Console.WriteLine("Введите число от 1 до 100");
+ int attempts = 5;
+
+ for (int i = 0; i < attempts; i++)
+ {
+     Console.Write($"Попытка {i + 1} :");
+     int number = int.Parse(Console.ReadLine());
+
+     if (number != value)
+     {
+         if (i < 4)
+         {
+             Console.WriteLine("Неверное число , попробуйте еще раз");
+         }
+     }
+
+     if (number == value)
+     {
+         Console.WriteLine("Поздравляю , вы угадали число");
+         break;
+     }
+
+     if (i == attempts - 1) 
+     {
+         Console.WriteLine($"Вы не угадали число. Загаданное число {value}.");
+         break;
+     }
+ }
