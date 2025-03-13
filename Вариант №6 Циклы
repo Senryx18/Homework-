@@ -1,0 +1,44 @@
+ double x0, y0, V0, a0,g,t;
+
+ t = 0;
+
+ g= 9.81;
+
+ Console.WriteLine("Введите координату пушки по x :");
+ x0 = double.Parse(Console.ReadLine());
+
+ Console.WriteLine("Введите координату пушки по y :");
+ y0 = double.Parse(Console.ReadLine());
+
+ Console.WriteLine("Введите начальную скорость снаряда V0 :");
+ V0 = double.Parse(Console.ReadLine());
+
+ Console.WriteLine("Введите градусную меру угла a :");
+ a0 = double.Parse(Console.ReadLine());
+
+ double aRad = a0 * Math.PI / 180;
+
+ double cosA = Math.Cos(aRad);
+
+ double sinA = Math.Sin(aRad);
+
+ double Vx0 = V0 * cosA;
+
+ double Vy0 = V0 * sinA;
+
+ double timeStep = 0.5;
+
+ Console.WriteLine("Траектория полета снаряда:");
+
+ Console.WriteLine("Время \t X \t Y");
+
+ while (true)
+ {
+     double x1 = x0 + Vx0 * t;
+     double y1 = y0 + Vy0 * t - 0.5 * g * Math.Pow(t, 2);
+     if (y1 < 0)
+         break;
+     Console.WriteLine($"{t:F4} с \t {x1:F4} м \t{y1:F4} м");            
+     t += timeStep;
+ }
+ Console.WriteLine("Снаряд приземлился на землю.");
