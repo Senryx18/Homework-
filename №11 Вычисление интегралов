@@ -1,0 +1,30 @@
+static void Main(string[] args)
+{
+
+    double a, b, n, result = 0;
+
+        
+    Console.WriteLine("Введите нижний предел интегрирования");
+    a = double.Parse(Console.ReadLine());
+     
+    
+    Console.WriteLine("Введите верхний предел интегрирования");
+    b= double.Parse(Console.ReadLine());
+     
+
+    Console.WriteLine("Введите количество разбиений треугольника");
+    n = double.Parse(Console.ReadLine());
+    
+        
+
+    double h = (b - a) / n;
+    for (int i = 1; i <= n; i++)
+    {
+        double x = a + i * (h / 2);
+        result += 2 * x * x + 3 * x;
+    }
+    result *= h;
+    Console.WriteLine("Ответ: " + result);
+
+
+}
